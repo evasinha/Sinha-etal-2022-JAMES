@@ -57,4 +57,25 @@ Use the scripts found in the `workflow` directory to reproduce the figures used 
 
 | Script Name | Description | How to Run |
 | --- | --- | --- |
-| `generate_figures.py` | Script to generate my figures | `python3 generate_figures.py -i /path/to/inputs -o /path/to/outuptdir` |
+| `plotmodobs.py` | Script to generate simulated vs. observed flux figures | `python plotmodobs.py` |
+| `subplots_sens.py` | Script to generate sensitivity analysis figures | `python subplots_sens.py` |
+| `subplots_shade.py` | Script to generate model calibration figures | `python subplots_shade.py` |
+| `plot_valid_mod_obs.py` | Script to generate vaildation figures for fluxes, LAI, and harvest | `python plot_valid_mod_obs.py` |
+| `plot_dm_surr.py` | Script to generate scatter plot of ELM and surrogate simulations | `python plot_dm_surr.py` |
+| `plot_surr_rel_l2_rmse_rrmse.py` | Script to generate RMSE of surrogate model simulations | `python plot_surr_rel_l2_rmse_rrmse.py` |
+| `run_plot_valid_mod_obs.sh` | Shell script for running `plotmodobs.py` | `./run_plot_valid_mod_obs.sh` |
+| `run_site_calib_outputs.sh` | Shell script for running `plot_dm_surr.py`, `plot_surr_rel_l2_rmse_rrmse.py`, `subplots_sens.py`, and `subplots_shade.py` | `./run_site_calib_outputs.sh` |
+| `run_plotmodobs.sh` | Shell script for running `plot_valid_mod_obs.py` | `./run_plotmodobs.sh` |
+
+## Figures
+
+1. [Simulated vs. observed fluxes for miscanthus and switchgrass](figures/fig_model_obs.png)
+2. [Sensitivity analysis plots for miscanthus and switchgrass](figures/fig_SA.png)
+3. [Model carbon and energy fluxes calibration plots for miscanthus and switchgrass](figures/fig_calibration.png)
+4. [Model carbon and energy fluxes validation plots for miscanthus and switchgrass](figures/fig_validation.png)
+5. [Model LAI validation plots for miscanthus and switchgrass](figures/fig_LAI.png)
+6. [Model harvest validation plots for miscanthus and switchgrass](figures/fig_harvest.png)
+7. [Scatter plot of ELM and surrogate simulations for miscanthus](figures/fig_ELM_surrogate_miscanthus.png)
+8. [Scatter plot of ELM and surrogate simulations for switchgrass](figures/fig_ELM_surrogate_switchgrass.png)
+9. [RMSE of surrogate model for miscanthus and switchgrass](figures/fig_surrogate_RMSE.png)
+10. [Relative RMSE of surrogate model for miscanthus and switchgrass](figures/fig_surrogate_RRMSE.png)
