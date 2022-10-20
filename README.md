@@ -1,6 +1,6 @@
-_your zenodo badge here_
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7079897.svg)](https://doi.org/10.5281/zenodo.7232009)
 
-# Sinha-etal\_2022_JAMES
+# Sinha-etal-2022-JAMES
 
 **Modeling perennial bioenergy crops in the E3SM land model (ELMv2)**
 
@@ -25,24 +25,26 @@ We focus on high-productivity miscanthus and switchgrass, estimating various par
 The sensitivity analysis identifies five parameters associated with phenology, carbon/nitrogen allocation, stomatal conductance, and maintenance respiration as the most sensitive parameters for carbon and energy fluxes.
 We calibrated and validated the model against observations and found that the model closely captures the observed seasonality and the magnitude of carbon fluxes. 
 The validated model represents the latent heat flux fairly well, but sensible heat flux for miscanthus is not well captured.
-Finally, we validated the model against observed leaf area index (LAI) and harvest amount and found modeled LAI to be comparable to observations, although the model underestimates harvest amount.
+Finally, we validated the model against observed leaf area index (LAI) and harvest amount and found modeled LAI captured observed seasonality, although the model underestimates LAI and harvest amount.
 This work provides a foundation for future ESM analyses of the interactions between perennial bioenergy crops and carbon, water, and energy dynamics in the larger earth system, and sets the stage for studying the impact of future biofuel expansion on climate and terrestrial systems.
 
 ## Journal reference
-Sinha, E., Calvin, K.V., Bond-Lamberty B., Drewniak, B., Ricciuto, D., Sargsyan, K., Cheng, Y., Bernacchi, C., Moore, C., 2022. Modeling perennial bioenergy crops in the E3SM land model (ELMv2). (In review) Journal_JAMES, DOI: XXXX
+Sinha, E., Calvin, K.V., Bond-Lamberty B., Drewniak, B., Ricciuto, D., Sargsyan, K., Cheng, Y., Bernacchi, C., Moore, C., 2022. Modeling perennial bioenergy crops in the E3SM land model (ELMv2). (In review) Journal: JAMES, DOI: XXXX
 
 ## Code reference
-Sinha, E., Calvin, K.V., Bond-Lamberty B., Drewniak, B., Ricciuto, D., Sargsyan, K., Cheng, Y., Bernacchi, C., Moore, C., 2022. Modeling perennial bioenergy crops in the E3SM land model (ELMv2). Supporting code for Sinha et al. 2022 - TBD [Code]. Zenodo. http://doi.org/some-doi-number/zenodo.7777777
+Sinha, E., Calvin, K.V., Bond-Lamberty B., Drewniak, B., Ricciuto, D., Sargsyan, K., Cheng, Y., Bernacchi, C., Moore, C., 2022. Modeling perennial bioenergy crops in the E3SM land model (ELMv2). Supporting code for Sinha et al. 2022 - TBD [Code]. Zenodo. http://doi.org/10.5281/zenodo.5975834
 
 ## Data reference
 
 ### Input data
-Reference for each minted data source for your input data.  For example:
+Reference for each input minted data source.
 
-Human, I.M. (2021). My input dataset name [Data set]. DataHub. https://doi.org/some-doi-number
+Carl J Bernacchi (2022), AmeriFlux BASE US-UiB University of Illinois Miscanthus, Ver. 1-5, AmeriFlux AMP, (Dataset). https://doi.org/10.17190/AMF/1846664
+
+Carl J Bernacchi (2020), AmeriFlux BASE US-UiA University of Illinois Switchgrass, Ver. 1-5, AmeriFlux AMP, (Dataset). https://doi.org/10.17190/AMF/1617725
 
 ### Output data
-Sinha, E., Calvin, K.V., Bond-Lamberty B., Drewniak, B., Ricciuto, D., Sargsyan, K., Cheng, Y., Bernacchi, C., Moore, C., 2022. Modeling perennial bioenergy crops in the E3SM land model (ELMv2). Supporting data for Sinha et al. 2022 - TBD [Code]. Zenodo. http://doi.org/some-doi-number/zenodo.7777777
+Sinha, E., Calvin, K.V., Bond-Lamberty B., Drewniak, B., Ricciuto, D., Sargsyan, K., Cheng, Y., Bernacchi, C., Moore, C., 2022. Modeling perennial bioenergy crops in the E3SM land model (ELMv2). All model outputs for Sinha et al., 2022 - TBD are accessible directly from the DOE's National Energy Research Scientific Computing Center (NERSC) at https://portal.nersc.gov/cfs/e3sm/esinha/Sinha-etal-2022-JAMES/
 
 ## Contributing modeling software
 | Model | Version | Repository Link | DOI |
@@ -66,6 +68,7 @@ Use the scripts found in the `workflow` directory to reproduce the figures used 
 | `run_plot_valid_mod_obs.sh` | Shell script for running `plotmodobs.py` | `./run_plot_valid_mod_obs.sh` |
 | `run_site_calib_outputs.sh` | Shell script for running `plot_dm_surr.py`, `plot_surr_rel_l2_rmse_rrmse.py`, `subplots_sens.py`, and `subplots_shade.py` | `./run_site_calib_outputs.sh` |
 | `run_plotmodobs.sh` | Shell script for running `plot_valid_mod_obs.py` | `./run_plotmodobs.sh` |
+| `merge_images.py` | Merge images to produce final plot | `python merge_images.py` |
 
 ## Figures
 
